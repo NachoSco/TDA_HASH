@@ -133,7 +133,7 @@ Al analizar el gráfico, se pueden extraer diversas conclusiones:
 
 En resumen, el gráfico resalta cómo diferentes estructuras de datos pueden influir en el rendimiento de las operaciones de búsqueda según el tamaño de los datos. La elección de la estructura de datos adecuada puede tener un impacto significativo en el rendimiento de una aplicación, especialmente cuando se manejan grandes volúmenes de datos.
 
-# Qué es una función de hash y qué características debe tener
+### Qué es una función de hash y qué características debe tener
 
 Una función de hash es como una especie de receta secreta en la cocina. Toma algo, como una palabra o un número, y lo transforma en un código único. Es como si mezclaras ingredientes para hacer una receta especial: cada combinación de ingredientes produce un plato único.
 
