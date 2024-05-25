@@ -63,47 +63,47 @@ Un diccionario es como una caja de herramientas donde guardas cosas relacionadas
 
 Formas de Implementar un Diccionario:
 
-1. Tabla de Hash:
+1. **Tabla de Hash**:
 
 Una tabla de hash es como una lista grande donde guardamos cosas en posiciones específicas usando una clave.
 
-- Hashing: Imagina que tenemos una fórmula mágica (función de hash) que convierte la clave en un número que usamos como índice en la lista.
-- Colisiones: A veces, dos claves pueden terminar en el mismo lugar (colisión). Para manejar esto, podemos usar una lista en ese lugar o buscar el siguiente hueco libre.
+- **Hashing**: Imagina que tenemos una fórmula mágica (función de hash) que convierte la clave en un número que usamos como índice en la lista.
+- **Colisiones**: A veces, dos claves pueden terminar en el mismo lugar (colisión). Para manejar esto, podemos usar una lista en ese lugar o buscar el siguiente hueco libre.
 
-Pros:
+**Pros**:
 - Encontrar, agregar o borrar algo es súper rápido, normalmente toma el mismo tiempo sin importar cuántos elementos haya.
 - Perfecta si quieres velocidad.
 
-Contras:
+**Contras**:
 - Necesitas una buena fórmula mágica (función de hash).
 - Puede usar más memoria porque necesitas espacio extra para manejar colisiones.
 
-2. Árbol de Búsqueda Binario Balanceado (AVL, Red-Black Tree):
+2. **Árbol de Búsqueda Binario Balanceado (AVL, Red-Black Tree)**:
 
 Un árbol de búsqueda binario balanceado es como un árbol donde cada nodo guarda una clave y un valor, y el árbol se autoorganiza para mantener el equilibrio.
 
-- Estructura del Árbol: Cada nodo tiene dos hijos, uno a la izquierda y otro a la derecha. Las claves a la izquierda son más pequeñas y las de la derecha más grandes.
-- Balanceo: El árbol se ajusta solo para no estar desbalanceado y asegurar que encontrar cosas no se vuelva lento.
+- **Estructura del Árbol**: Cada nodo tiene dos hijos, uno a la izquierda y otro a la derecha. Las claves a la izquierda son más pequeñas y las de la derecha más grandes.
+- **Balanceo**: El árbol se ajusta solo para no estar desbalanceado y asegurar que encontrar cosas no se vuelva lento.
 
-Pros:
+**Pros**:
 - Encontrar, agregar o borrar algo toma un tiempo razonable que crece lentamente a medida que agregas más elementos.
 - No necesitas una función de hash.
 
-Contras:
+**Contras**:
 - Más complicado de programar que una tabla de hash.
 - Puede ser un poco más lento que una tabla de hash en algunos casos.
 
-3. Lista Enlazada:
+3. **Lista Enlazada**:
 
 Una lista enlazada es simplemente una lista donde cada elemento apunta al siguiente.
 
-- Estructura de Lista: Cada elemento tiene una clave y un valor, y para encontrar algo tienes que empezar desde el principio y buscar hasta encontrar la clave.
-- Inserción: Puedes agregar elementos al principio o al final de la lista.
+- **Estructura de Lista**: Cada elemento tiene una clave y un valor, y para encontrar algo tienes que empezar desde el principio y buscar hasta encontrar la clave.
+- **Inserción**: Puedes agregar elementos al principio o al final de la lista.
 
-Pros:
+**Pros**:
 - Muy fácil de programar y entender.
 - No tienes que preocuparte por colisiones ni balanceo.
 
-Contras:
+**Contras**:
 - Encontrar, agregar o borrar algo puede ser lento porque tienes que buscar a través de toda la lista.
 - No es buena para listas largas o cuando necesitas velocidad.
