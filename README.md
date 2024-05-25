@@ -4,7 +4,7 @@
 
 # TDA HASH
 
-## Repositorio de (Nombre Apellido) - (Padrón) - (Mail)
+## Repositorio de Nicolas Ignacio Scopel - 111305 - nscopel@fi.uba.ar
 
 - Para compilar:
 
