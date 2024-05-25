@@ -109,7 +109,7 @@ Una lista enlazada es simplemente una lista donde cada elemento apunta al siguie
 - No es buena para listas largas o cuando necesitas velocidad.
 
 <div align="right">
-<img width="900px" src="img/grafico.PNG">
+<img width="800px" src="img/grafico.PNG">
 </div>
 
 Explicación y Reseña del Gráfico:
