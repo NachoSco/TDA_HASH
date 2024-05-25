@@ -147,4 +147,23 @@ Para ser efectiva, una función de hash debe tener algunas características impo
 
 4. **Resistencia a colisiones**: Una colisión ocurre cuando dos entradas diferentes producen el mismo código único. Si bien es difícil evitar por completo las colisiones, una buena función de hash debería minimizar la probabilidad de que ocurran. Esto es importante para evitar confusiones y mantener la integridad de los datos.
 
+Una tabla de hash es como una caja de almacenamiento gigante donde puedes guardar cosas usando una clave para encontrarlas rápidamente. Funciona como un mapa donde asignas una clave a un valor específico y luego puedes buscar ese valor rápidamente usando esa clave. Las tablas de hash son muy eficientes para recuperar y almacenar datos, especialmente cuando tienes una gran cantidad de información para manejar.
+
+## Qué es una tabla de Hash y los diferentes métodos de resolución de colisiones vistos ( probing lineal, probling cuadratico y hash doble)
+
+Los métodos de resolución de colisiones en las tablas de hash son técnicas que se utilizan cuando dos o más claves terminan asignando el mismo índice en la tabla de hash. Aquí tienes una breve explicación de tres métodos comunes de resolución de colisiones:
+
+1. **Probing Lineal**:
+   - Cuando ocurre una colisión, este método busca el siguiente índice disponible en la tabla de hash, uno por uno, de manera lineal.
+   - Por ejemplo, si la clave "A" colisiona con la clave "B" en el índice 5, el método de probing lineal buscará el siguiente índice disponible hasta encontrar un lugar libre donde colocar la clave "B".
+
+2. **Probing Cuadrático**:
+   - Similar al probing lineal, pero en lugar de buscar de forma lineal, este método utiliza una secuencia de pasos cuadráticos para buscar el siguiente índice disponible.
+   - Por ejemplo, si la clave "A" colisiona con la clave "B" en el índice 5, el método de probing cuadrático buscará en los índices 5, 9, 14, 20, etc., hasta encontrar un lugar libre para la clave "B".
+
+3. **Hash Doble**:
+   - En este método, cuando ocurre una colisión, se calcula un segundo valor hash a partir de la clave y se utiliza para calcular un segundo índice en la tabla de hash.
+   - Este segundo índice se utiliza como un incremento adicional al índice original, permitiendo que la búsqueda se realice de manera más diversa que en los métodos de probing lineal y cuadrático.
+   - Por ejemplo, si la clave "A" colisiona con la clave "B" en el índice 5, el método de hash doble calculará un segundo índice usando una segunda función hash y luego buscará en los índices 5, 8, 13, 20, etc., hasta encontrar un lugar libre para la clave "B".
+
 
