@@ -151,7 +151,7 @@ Una tabla de hash es como una caja de almacenamiento gigante donde puedes guarda
 
 ## Qué es una tabla de Hash y los diferentes métodos de resolución de colisiones vistos ( probing lineal, probling cuadratico y hash doble)
 
-Los métodos de resolución de colisiones en las tablas de hash son técnicas que se utilizan cuando dos o más claves terminan asignando el mismo índice en la tabla de hash. Aquí tienes una breve explicación de tres métodos comunes de resolución de colisiones:
+Una tabla de hash es como una caja de almacenamiento gigante donde puedes guardar cosas usando una clave para encontrarlas rápidamente. Funciona como un mapa donde asignas una clave a un valor específico y luego puedes buscar ese valor rápidamente usando esa clave. Las tablas de hash son muy eficientes para recuperar y almacenar datos, especialmente cuando tienes una gran cantidad de información para manejar.
 
 1. **Probing Lineal**:
    - Cuando ocurre una colisión, este método busca el siguiente índice disponible en la tabla de hash, uno por uno, de manera lineal.
