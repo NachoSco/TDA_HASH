@@ -79,7 +79,7 @@ Un diccionario es como una caja de herramientas donde guardas cosas relacionadas
    - Necesitas una buena fórmula mágica (función de hash).
    - Puede usar más memoria porque necesitas espacio extra para manejar colisiones.
 
-2. **Árbol de Búsqueda Binario Balanceado (AVL, Red-Black Tree)**:
+2. **Árbol de Búsqueda Binario Balanceado (AVL)**:
 
    Un árbol de búsqueda binario balanceado es como un árbol donde cada nodo guarda una clave y un valor, y el árbol se autoorganiza para mantener el equilibrio.
 
