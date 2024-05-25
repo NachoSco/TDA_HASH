@@ -133,3 +133,18 @@ Al analizar el gráfico, se pueden extraer diversas conclusiones:
 
 En resumen, el gráfico resalta cómo diferentes estructuras de datos pueden influir en el rendimiento de las operaciones de búsqueda según el tamaño de los datos. La elección de la estructura de datos adecuada puede tener un impacto significativo en el rendimiento de una aplicación, especialmente cuando se manejan grandes volúmenes de datos.
 
+#Qué es una función de hash y qué características debe tener
+
+Una función de hash es como una especie de receta secreta en la cocina. Toma algo, como una palabra o un número, y lo transforma en un código único. Es como si mezclaras ingredientes para hacer una receta especial: cada combinación de ingredientes produce un plato único.
+
+Para ser efectiva, una función de hash debe tener algunas características importantes:
+
+1. **Determinística**: Esto significa que siempre que le des la misma entrada, obtendrás la misma salida. Por ejemplo, si le das la palabra "perro" a la función de hash, siempre debería darte el mismo código único.
+
+2. **Eficiente**: La función de hash debe ser rápida de calcular. No quieres esperar mucho tiempo para obtener el código único de algo.
+
+3. **Distribución uniforme**: Esto significa que la función de hash debería producir códigos únicos que se distribuyan de manera uniforme en el espacio de salida. No quieres que muchos elementos diferentes terminen con el mismo código único.
+
+4. **Resistencia a colisiones**: Una colisión ocurre cuando dos entradas diferentes producen el mismo código único. Si bien es difícil evitar por completo las colisiones, una buena función de hash debería minimizar la probabilidad de que ocurran. Esto es importante para evitar confusiones y mantener la integridad de los datos.
+
+
