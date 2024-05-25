@@ -115,20 +115,20 @@ Un diccionario es como una caja de herramientas donde guardas cosas relacionadas
 
 Explicación y Reseña del Gráfico:
 
-En el análisis de rendimiento de diferentes estructuras de datos para la operación de pertenencia, se utilizó Python para implementar un programa que mide el tiempo necesario para completar esta operación en tres estructuras de datos diferentes: tabla de hash, árbol de búsqueda binario balanceado y lista enlazada. Estas implementaciones se probaron con diferentes tamaños de datos para evaluar su rendimiento en escenarios de datos de diferentes tamaños.
+Para analizar el rendimiento de diferentes estructuras de datos en la operación de pertenencia, se empleó Python para implementar un programa que mide el tiempo requerido para completar esta operación en tres estructuras distintas: tabla de hash, árbol de búsqueda binario balanceado y lista enlazada. Estas implementaciones se sometieron a pruebas con diferentes tamaños de datos para evaluar su desempeño en escenarios variados.
 
-Después de recopilar los datos de rendimiento, se creó un gráfico utilizando la biblioteca de visualización de datos Matplotlib en Python. Este gráfico muestra claramente cómo varía el tiempo de completar la operación de pertenencia en función del tamaño de la lista para cada una de las tres estructuras de datos.
+Tras recopilar los datos de rendimiento, se generó un gráfico utilizando la biblioteca de visualización de datos Matplotlib en Python. Este gráfico ofrece una representación visual clara de cómo varía el tiempo de completar la operación de pertenencia en función del tamaño de la lista para cada una de las tres estructuras de datos.
 
 Reseña del Gráfico:
 
-El gráfico muestra el tiempo de completar la operación de pertenencia en función del tamaño de la lista para tres estructuras de datos diferentes: tabla de hash, árbol de búsqueda binario balanceado y lista enlazada. Cada línea en el gráfico representa una estructura de datos, y el eje x representa el tamaño de la lista, mientras que el eje y representa el tiempo en segundos.
+El gráfico exhibe el tiempo necesario para completar la operación de pertenencia en relación con el tamaño de la lista para tres estructuras de datos distintas: tabla de hash, árbol de búsqueda binario balanceado y lista enlazada. Cada línea en el gráfico corresponde a una estructura de datos, mientras que el eje x representa el tamaño de la lista y el eje y representa el tiempo en segundos.
 
 Conclusión:
 
-Al observar el gráfico, podemos sacar varias conclusiones:
-1. La tabla de hash muestra un tiempo de búsqueda constante, independientemente del tamaño de la lista. Esto sugiere que la búsqueda en una tabla de hash es muy eficiente y no se ve afectada significativamente por el tamaño de los datos.
+Al analizar el gráfico, se pueden extraer diversas conclusiones:
+
+1. La tabla de hash presenta un tiempo de búsqueda constante, independientemente del tamaño de la lista. Esto sugiere que la búsqueda en una tabla de hash es altamente eficiente y apenas se ve afectada por el tamaño de los datos.
 2. El árbol de búsqueda binario balanceado muestra un tiempo de búsqueda que aumenta de forma logarítmica con el tamaño de la lista. Aunque es más lento que la tabla de hash para listas pequeñas, su tiempo de búsqueda se mantiene razonable incluso para listas más grandes.
-3. La lista enlazada muestra un tiempo de búsqueda que aumenta linealmente con el tamaño de la lista. Esto indica que la búsqueda en una lista enlazada se vuelve significativamente más lenta a medida que aumenta el tamaño de los datos.
+3. La lista enlazada exhibe un tiempo de búsqueda que crece linealmente con el tamaño de la lista. Este comportamiento indica que la búsqueda en una lista enlazada se vuelve considerablemente más lenta a medida que aumenta el tamaño de los datos.
 
-En resumen, el gráfico destaca cómo diferentes estructuras de datos pueden afectar el rendimiento de las operaciones de búsqueda en función del tamaño de los datos. La elección de la estructura de datos adecuada puede tener un impacto significativo en el rendimiento de una aplicación, especialmente cuando se manejan grandes volúmenes de datos.
-
+En resumen, el gráfico resalta cómo diferentes estructuras de datos pueden influir en el rendimiento de las operaciones de búsqueda según el tamaño de los datos. La elección de la estructura de datos adecuada puede tener un impacto significativo en el rendimiento de una aplicación, especialmente cuando se manejan grandes volúmenes de datos.
