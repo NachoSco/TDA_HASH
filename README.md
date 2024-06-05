@@ -100,9 +100,23 @@ El gráfico exhibe el tiempo necesario para completar la operación de pertenenc
 
 Al analizar el gráfico, se pueden extraer diversas conclusiones:
 
-1. La tabla de hash presenta un tiempo de búsqueda constante, independientemente del tamaño de la lista. Esto sugiere que la búsqueda en una tabla de hash es altamente eficiente y apenas se ve afectada por el tamaño de los datos.
-2. El árbol de búsqueda binario balanceado muestra un tiempo de búsqueda que aumenta de forma logarítmica con el tamaño de la lista. Aunque es más lento que la tabla de hash para listas pequeñas, su tiempo de búsqueda se mantiene razonable incluso para listas más grandes.
-3. La lista enlazada exhibe un tiempo de búsqueda que crece linealmente con el tamaño de la lista. Este comportamiento indica que la búsqueda en una lista enlazada se vuelve considerablemente más lenta a medida que aumenta el tamaño de los datos.
+1. **Tabla de hash:** Presenta un tiempo de búsqueda constante \(O(1)\), independientemente del tamaño de la lista. Esto sugiere que la búsqueda en una tabla de hash es altamente eficiente y apenas se ve afectada por el tamaño de los datos.
+   
+   **Dificultades:**
+   - **Colisiones:** Aunque es muy eficiente, puede enfrentar problemas de colisiones, que requieren técnicas adicionales como encadenamiento o direccionamiento abierto para manejarlas.
+   - **Espacio:** Puede requerir una cantidad significativa de memoria si la tabla no está bien dimensionada.
+
+2. **Árbol de búsqueda binario balanceado (ABB):** Muestra un tiempo de búsqueda que aumenta de forma logarítmica \(O(\log n)\) con el tamaño de la lista. Aunque es más lento que la tabla de hash para listas pequeñas, su tiempo de búsqueda se mantiene razonable incluso para listas más grandes.
+
+   **Dificultades:**
+   - **Complejidad de implementación:** La implementación y mantenimiento de un árbol de búsqueda binario balanceado (como un AVL o un árbol rojo-negro) es más compleja, debido a la necesidad de reequilibrar el árbol tras las inserciones y eliminaciones.
+   - **Rebalanceo:** Operaciones como inserción y eliminación pueden requerir reestructuración del árbol, lo que añade complejidad y tiempo de procesamiento.
+
+3. **Lista enlazada:** Exhibe un tiempo de búsqueda que crece linealmente \(O(n)\) con el tamaño de la lista. Este comportamiento indica que la búsqueda en una lista enlazada se vuelve considerablemente más lenta a medida que aumenta el tamaño de los datos.
+
+   **Dificultades:**
+   - **Ineficiencia:** La búsqueda en una lista enlazada es ineficiente para grandes volúmenes de datos.
+   - **Acceso secuencial:** No permite acceso directo a elementos, lo que puede hacerla lenta para operaciones frecuentes de búsqueda o acceso aleatorio.
 
 En resumen, el gráfico resalta cómo diferentes estructuras de datos pueden influir en el rendimiento de las operaciones de búsqueda según el tamaño de los datos. La elección de la estructura de datos adecuada puede tener un impacto significativo en el rendimiento de una aplicación, especialmente cuando se manejan grandes volúmenes de datos.
 
