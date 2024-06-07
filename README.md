@@ -152,8 +152,9 @@ Una tabla de hash es como una caja de almacenamiento gigante donde puedes guarda
    - En este método, cuando ocurre una colisión, se calcula un segundo valor hash a partir de la clave y se utiliza para calcular un segundo índice en la tabla de hash.
    - Este segundo índice se utiliza como un incremento adicional al índice original, permitiendo que la búsqueda se realice de manera más diversa que en los métodos de probing lineal y cuadrático.
    - Por ejemplo, si la clave "A" colisiona con la clave "B" en el índice 5, el método de hash doble calculará un segundo índice usando una segunda función hash y luego buscará en los índices 5, 8, 13, 20, etc., hasta encontrar un lugar libre para la clave "B".
-
+   - 
+## Grafico de memoria 
 <div style="text-align: center;">
-  <img width="500px" src="img/Memoria_HASH.PNG">
+  <img width="1000px" src="img/Memoria_HASH.PNG">
 </div>
 
